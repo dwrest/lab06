@@ -64,16 +64,16 @@
         <div id="greetingMessage"></div>
     </div>
     <script>
-        function showGreeting() {
-            // Step 1: Get the name from the input field
-            
-
-            // Step 2: Create a greeting message using a variable
-            
-
-            // Step 3: Update the div element with the greeting message
-            
-        }
-    </script>
+            function showGreeting() {
+                // Step 1: Get the name from the input field
+                let name = document.getElementById("nameInput").value;
+        
+                // Step 2: Create a greeting message using a variable
+                let greetingMessage = "Hello, " + name + "!";
+        
+                // Step 3: Update the div element with the greeting message
+                document.getElementById("greetingMessage").innerText = greetingMessage;
+            }
+        </script>
 </body>
 </html>
